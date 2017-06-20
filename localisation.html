@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <meta charset="utf-8"> 
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title></title>
+
+
+<!--<link href="assets/css/bootstrap.min.css" rel="stylesheet"> -->
+  <link href="assets/css/main.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet"> 
+  <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+	<div class="barre-haute">
+		<img src="assets/images/mcfr_classic375.jpg">
+	</div>
+
+    <ul class="">
+        <li><a class="active" href="localisation.html">Plan d'accès/horaires</a></li>
+        <li><a href="compteUtilisateur.html">Créer un compte utilisateur</a></li>
+        <li><a href="compteUtilisateur.html">Faire un devis en ligne</a></li>
+        <li><a href="accueil.html">Accueil</a></li>
+    </ul>
+
+	<div class="box1">
+    <div class="row1"> 
+      <div class="boxes"> 
+  	 	   <div class="boxGauche"> 
+         <p class="police2">HORAIRES</p>
+          <p class="police1">Lundi et Mercredi:</p>
+             <h2>9h15-12h30 / 14h-10h </h2>
+          <p class="police1">Mardi, Jeudi, Vendredi: </p>
+             <h2>9h15-19h (non stop)</h2>
+          <p class="police1"> Samedi:</p>   
+              <h2>14h-18h (fermé le matin)</h2>
+    
+         </div>
+         <div class="boxDroit">
+            <p class="police1"> La maison de la copie et du secrétariat</p>
+            <h3>10 bis Av. Henri Fréville<br>
+            35200 RENNES SUD </h3>
+            <div id="googleMap" class="mapa"></div>
+          </div>
+      </div>
+    </div>
+	</div> <!--ferme la box1-->
+
+
+</body>
+
+<footer>
+    <p class="final">Copyright © 2017 Maison de la Copie - Tous droits réservés 
+    - SIREN 342 481 165 contact@maison-copie.fr <p>
+
+  </footer>
+
+<script language="javascript">
+function myMap() {
+
+    var var_location = new google.maps.LatLng(48.091334,-1.675137);
+
+            var var_mapoptions = {
+              center: var_location,
+              zoom: 16
+            };
+
+    var var_marker = new google.maps.Marker({
+    position: var_location,
+    map: var_map,
+    title:"maisonCopie"});
+
+            var var_map = new google.maps.Map(document.getElementById("googleMap"),
+                var_mapoptions);
+
+    var_marker.setMap(var_map);
+
+
+}
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDQzWJF2hNzqQ7h72F5EAg6bzL1Pjw4Qx0&callback=myMap"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="assets/js/bootstrap.js"></script>
+</html>

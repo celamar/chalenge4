@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <meta charset="utf-8"> 
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title></title>
+
+
+<!--<link href="assets/css/bootstrap.min.css" rel="stylesheet"> -->
+  <link href="assets/css/main.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet"> 
+  <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+	<div class="barre-haute">
+		<img src="assets/images/mcfr_classic375.jpg">
+	</div>
+
+    <ul class="">
+        <li><a href="localisation.html">Plan d'accès/horaires</a></li>
+        <li><a class="active" href="compteUtilisateur.html">Créer un compte utilisateur</a></li>
+        <li><a href="compteUtilisateur.html">Faire un devis en ligne</a></li>
+        <li><a href="accueil.html">Accueil</a></li>
+    </ul>
+    
+	<div class="box1">
+    	<p class="police1 devis">Votre devis en moins de 3 minutes</p>
+
+
+    	<div class="row1"> 
+	 		<div class="boxes"> 
+	 			<h3>Vos coordonnées</h3>
+				<section class="boxGauche">
+					<form><br>
+						<label  for="statut"> Votre statut (*) :  </label> 
+							<select name="csp" id="csp" required="required">
+							   <option value="" selected></option>
+							   <option value="Particulier">Particulier</option>
+							   <option value="Association">Association</option>
+							   <option value="Entreprise">Entreprise</option>
+							   <option value="Administration">Administration</option>
+							   <option value="Etudiant">Etudiant</option>
+						 	</select>
+
+					<br><br>
+						<label for="nomRaisSoci"> Votre nom / Raison sociale (*) :</label><br>
+						<input required="required" type="text" class="form-control" id="nomRaisSoci"><br>
+					<br>
+						<label for="email"> Email (*) :</label><br>
+						<input required="required" type="text" class="form-control" id="email"><br>
+					<br>
+						<label for="adress"> Adresse</label><br>
+						<input type="text" class="form-control" id="adress"><br>
+					<br>
+						<label for="complAdress"> Complément adresse </label><br>
+						<input type="text" class="form-control" id="complAdress"><br>
+					<br>
+						<label for="Ville"> Ville :</label><br>
+						<input type="text" class="form-control" id="ville"><br>
+					<br>
+						<label for="codePostal"> Code postal :</label><br>
+						<input type="text" class="form-control" id="codePostal">
+					<br><br>
+						<label for="telFixe"> Tél 1 (fixe): </label><br>
+						<input type="text" class="form-control" id="telFixe">
+					<br><br>
+						<label for="telMobile"> Tél 2 (mobile) </label><br>
+						<input type="text" class="form-control" id="telMobile">
+					<br><br>
+					</form>
+				</section>
+			</div>
+
+
+        	<div class="boxes">
+            	<section class="boxDroit">
+					<form>
+						<label for="nom"> Nom :</label><br>
+						<input   type="text" class="form-control" id="nom"><br>
+						 <br><br>
+						<label for="prenom"> Prénom :</label><br>
+						<input   type="text" class="form-control" id="prenom"><br>
+						 <br><br>
+						<label for="fonction"> Fonction dans l'organisation:</label><br>
+						<input   type="text" class="form-control" id="fonction"><br>
+						<br>
+					</form>
+					
+					<input type="button" class="button" value="Créer mon compte utilisateur">
+
+					<div>
+					<p class="textpetit">Conformément à la loi informatique et liberté n° 78-17 du 6/01/1978, vous disposez d'un droit d'accés et de rectification auprés de LA MAISON DE LA COPIE et du Secrétariat, 10 bis avenue Henri Fréville. 35200 RENNES. France, ou par mail : contact@maison-copie.fr <br>
+
+					POURRIELS, NON MERCI ! : Notre établissement préservera la tranquillité de votre boite mail, de la même façon que nous aimons voir préserver la tranquillité de notre boite mail,. C'est l'avantage des entreprises à échelle humaine. Notez également que notre société ne cède pas ses fichiers mails à des tiers. 
+					(Votez www.maison-copie.fr !) </p>
+					</div>
+				</section>
+        	</div>
+    	</div>
+	</div> <!--ferme la box1-->
+
+	<footer>
+		<p class="final">Copyright © 2017 Maison de la Copie - Tous droits réservés 
+		- SIREN 342 481 165 contact@maison-copie.fr <p>
+
+	</footer>
+</body>
+ 
+</html>
